@@ -1,8 +1,8 @@
 [workspace]
 members = [
     "okapi",
-    "rocket-okapi",
-    "rocket-okapi-codegen",
+    "rocket_okapi",
+    "rocket_okapi_codegen",
     "examples/json-web-api",
     "examples/custom_schema",
     "examples/nested",
