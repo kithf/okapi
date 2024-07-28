@@ -72,7 +72,7 @@ impl OpenApiResponderInner for &[u8] {
     }
 }
 
-impl<L, R> OpenApiResponderInner for rocket::Either<L, R>
+impl<L, R> OpenApiResponderInner for rocket::figment::value::magic::Either<L, R>
 where
     L: OpenApiResponderInner,
     R: OpenApiResponderInner,

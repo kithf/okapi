@@ -110,7 +110,7 @@ pub use rocket_okapi_codegen::OpenApiFromRequest;
 /// #[derive(OpenApiFromRequest)]
 /// pub struct MyStructName;
 /// ```
-pub trait OpenApiFromRequest<'a>: rocket::request::FromRequest<'a> {
+pub trait OpenApiFromRequest<'a>: rocket::request::from_request::FromRequest<'a> {
     /// Specifies what headers or other parameters are required for this Request Guards to validate
     /// successfully.
     fn from_request_input(
