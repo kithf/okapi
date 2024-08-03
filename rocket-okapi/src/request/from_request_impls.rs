@@ -185,7 +185,7 @@ impl<'r, T: OpenApiFromRequest<'r>> OpenApiFromRequest<'r>
 
 // ## Implementations for other crates
 // https://docs.rs/rocket_db_pools/0.1.0/rocket_db_pools/struct.Connection.html#impl-FromRequest%3C%27r%3E
-
+/*
 #[cfg(feature = "rocket_db_pools")]
 impl<'r, D: rocket_db_pools::Database> OpenApiFromRequest<'r> for rocket_db_pools::Connection<D> {
     fn from_request_input(_gen: &mut OpenApiGenerator, _name: String, _required: bool) -> Result {
@@ -206,7 +206,7 @@ impl<'r> OpenApiFromRequest<'r> for rocket_sync_db_pools::example::ExampleDb {
         Ok(RequestHeaderInput::None)
     }
 }
-
+*/
 #[cfg(feature = "rocket_ws")]
 impl<'r> OpenApiFromRequest<'r> for rocket_ws::WebSocket {
     fn from_request_input(_gen: &mut OpenApiGenerator, _name: String, _required: bool) -> Result {
